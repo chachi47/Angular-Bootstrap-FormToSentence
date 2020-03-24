@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css">
+    <script src="./angular.min.js"></script>
+    <script src="./app.js"></script>
+    <title>Form to Sentance</title>
+</head>
+<body ng-app="sentReplace" id="mainBody" class="text-center">
+    <div ng-controller="replaceWord">
+        <form class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal">Please Enter Your Details</h1>
+            <label for="inputEmail" class="sr-only">Full Name</label>
+            <input type="text" id="myName" ng-model="name" class="form-control" placeholder="Your Full Name" required autofocus>
+            <label for="inputEmail" class="sr-only">Age</label>
+            <input type="text" id="myAge" ng-model="age" class="form-control" placeholder="Your Age" required autofocus>
+            <label for="inputEmail" class="sr-only">Place</label>
+            <input type="text" id="myPlace" ng-model="place" class="form-control" placeholder="Your Place" required autofocus>
+            <label for="text" class="sr-only">Phone</label>
+            <input type="text" id="myPhone" ng-model="phone" class="form-control" placeholder="Your Phone" required autofocus>
+          </form>
+        <br>
+        <div>
+        <p id="sentdiv">
+            Hello my Name is <b>{{name}}</b> and I am <b>{{age}}</b> Years old. I am from <b>{{place}}</b> and my Phone Number is <b>{{phone}}</b>.
+        </p>
+        </div>
+    </div>
+</body>
+</html>
