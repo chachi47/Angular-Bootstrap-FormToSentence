@@ -12,7 +12,7 @@
 <body ng-app="sentReplace" id="mainBody" class="text-center">
     <div ng-controller="replaceWord">
         <form class="form-signin">
-            <h1 class="h3 mb-3 font-weight-normal">Please Enter Your Details</h1>
+            <h1 class="h3 mb-3 font-weight-normal">PLEASE ENTER THE DETAILS</h1>
             <label for="inputEmail" class="sr-only">Full Name</label>
             <input type="text" id="myName" ng-model="name" class="form-control" placeholder="Your Full Name" required autofocus>
             <label for="inputEmail" class="sr-only">Age</label>
@@ -25,7 +25,7 @@
         <br>
         <div>
         <p id="sentdiv">
-            Hello my Name is <b>{{name}}</b> and I am <b>{{age}}</b> Years old. I am from <b>{{place}}</b> and my Phone Number is <b>{{phone}}</b>.
+            Hello my Name is <b id="coordinates">{{name | uppercase}}</b> and I am <b id="coordinates">{{age | uppercase}}</b> Years old. I am from <b id="coordinates">{{place | uppercase}}</b> and my Phone Number is <b id="coordinates">{{phone | uppercase}}</b>.
         </p>
         </div>
     </div>

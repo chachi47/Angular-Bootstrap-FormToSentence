@@ -15,7 +15,8 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #3b5998;
+  color: #ded1c1;
 }
 
 .form-signin {
@@ -50,8 +51,14 @@ body {
 
 #sentdiv {
     font-size: 250%;
+    border-color: rgb(0, 0, 0);
+    border-style: groove;
 }
 
 #myAge, #myPlace, #myPhone {
     margin-top: 5%;
+}
+
+#coordinates {
+  color: #fb3958;
 }
